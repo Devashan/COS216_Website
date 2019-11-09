@@ -1,0 +1,587 @@
+nav
+{
+
+    display: block;
+    /*    background-color: 333;*/
+    align-content: center;
+    height: 41px;
+
+}
+
+#cal
+{
+    height: calc(100% - 115px);
+}
+
+.calendar
+{
+    color: white;
+    /*width: calc(100% - 16px);
+    height: calc(100% - 73px);
+    margin: 8px;*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.1);
+
+    font-size: 40px;
+}
+
+table, th, td {
+    border: 8px solid rgb(51, 51, 51);
+    border-collapse: collapse;
+}
+
+td
+{
+    background-color: #111;
+}
+
+body
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+div
+{
+    margin-top: 8px;
+    display: block;
+}
+
+
+
+.overlay
+{
+    position:fixed;
+    background-color: rgba(51, 51, 51, 0.7);
+    height: calc(100% - 65px);
+    width: calc(100% - 16px);
+    text-align: center
+}
+
+#searchbar
+{
+    position:relative;
+    background-color: #333;
+    width: calc(100% - 0px);
+    height: 41px;
+
+}
+
+.filter
+{
+    position:relative;
+    background-color: #333;
+    width: calc(100% - 0px);
+    height: 41px;
+}
+
+#searchbar input[type=text]
+{
+    font-family: arial;
+    color: #111;
+    border: none;
+    height: 39px;
+    width: calc(100% - 265px);
+    font-size: 30px;
+    background-color: white;
+    padding-left: 5px
+
+
+}
+
+.filter input[type=text]
+{
+    border: none;
+    height: 39px;
+    font-size: 30px;
+    background-color: white;
+    padding-left: 5px;
+    width: 150px;
+
+}
+
+#year-select
+{
+    width: 150px;
+}
+
+
+
+.custom-select
+{
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    height: 41px;
+    font-family: arial;
+    width: 150px;
+    color: black;
+    outline:none
+}
+
+input:focus
+{
+    outline:none;
+
+}
+
+
+.banner
+{
+    font-family: arial;
+    color: white;
+    background-color: #333;
+    margin-left: 0px;
+    width: 403px;
+    height: 41px;
+    text-align: center;
+    width: 650px;
+
+
+}
+
+.header
+{
+    position: relative;
+    top: 13px;
+
+
+}
+
+#applyfilter
+{
+    background-color: rgb(158, 7, 7);
+}
+
+#applyfilter:hover
+{
+    background-color: #111;
+    cursor: pointer;
+}
+
+
+
+.navbar
+{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    background-color: #333;
+    font-size: 10px;
+    width: 100px
+}
+
+.unclickable
+{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    background-color: #111;
+    font-size: 10px;
+    width: 100px
+
+}
+
+#genre-select
+{
+    width: 250px;
+}
+
+.unclickable.genre2
+{
+    background-color: #333;
+    width: 120px
+}
+
+#current
+{
+    background-color: #9e0707;
+}
+
+a:hover:not(#current):not(.unclickable):not(.title):not(.restriction):not(.rating):not(.toprating):not(.information):not(.errormessage):not(.heading):not(.heading2):not(#passreq)
+{
+    cursor: pointer;
+    background-color: #111;
+}
+
+
+
+.spread
+{
+    position: relative;
+    display: block;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 70px;
+
+}
+
+.singlespread
+{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+
+
+
+
+.sheet
+{
+    color: white;
+    display: inline-block;
+    margin: auto;
+    width: 400px;
+    height: 816px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(51, 51, 51, 1);
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+
+}
+
+
+
+
+
+p
+{
+    display: block;
+    margin: 8px;
+    font-family: arial;
+    font-size: 14px;
+    height: 50px;
+}
+
+
+
+body
+{
+    background-image: url("../image_files/background.jpg");
+
+}
+
+img
+{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    vertical-align: middle;
+    top: 50px;
+
+
+}
+
+.poster
+{
+    top: 8px;
+    width: 384px;
+    height: 588px;
+
+}
+
+
+
+
+.title
+{
+    color: white;
+    display: block;
+    font-family: arial;
+    padding-top: 20px;
+
+}
+
+.rating
+{
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #111;
+    font-family: arial;
+    width: 140px;
+    font-size: 16px;
+}
+
+.genre
+{
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #111;
+    font-family: arial;
+    width: 160px;
+    font-size: 12px;
+}
+
+.restriction
+{
+    display: inline-block;
+    padding: 10px;
+    background-color: #9e0707;
+    font-family: arial;
+    width: 150px;
+    font-size: 12px;
+}
+
+.toprating
+{
+    display: inline-block;
+    padding: 10px;
+    background-color: #9e0707;
+    font-family: arial;
+    width: 150px;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.feat
+{
+    position: relative;
+    display: block;
+    background-color: rgba(51, 51, 51, 0.7);
+    background: url('../image_files/200w.gif') no-repeat center center;
+    /*    left: 50%;*/
+    margin: auto;
+    margin-top: 100px;
+
+    width: 25%;
+
+    padding-top: 37.7%;
+
+    background-size: 100%;
+}
+
+.loader
+{
+    background: url('../image_files/200w.gif') no-repeat center center;
+    display: block;
+    width: 141px;
+    height: 110px;
+    opacity: 1.0;
+    top: 0px;
+    left: 0px;
+
+}
+
+.info
+{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    height: 50px;
+    color: white;
+    align-content: center;
+}
+
+.information
+{
+    position: relative;
+    display: block;
+    background-color: #9e0707;
+    margin: auto;
+    margin-top: 8px;
+    font-family: arial;
+    font-size: 16px;
+    padding: 10px;
+    width: 30%;
+    height: 35%;
+
+
+}
+
+
+
+
+#planet:hover
+{
+    background-image: url(../image_files/planet-2.jpg) !important;
+}
+
+#birds:hover
+{
+    background-image: url(../image_files/birds-2.jpg) !important;
+}
+
+#sabbath:hover
+{
+    background-image: url(../image_files/sabbath-2.jpg) !important;
+}
+
+
+iframe
+{
+    display: block;
+
+    width: 91%;
+    height: 247px;
+    margin: auto;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    align-content: center;
+
+    left: 50px;
+
+}
+
+.error
+{
+    display: block;
+
+    height: 41px;
+
+    width: 100%;
+
+    margin-right: 20px;
+
+    margin-top: 8px;
+
+    background-color: #333;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+}
+
+.errormessage
+{
+    color: white;
+
+    font-family: arial;
+
+    font-size: 20px;
+
+    display: inline-block;
+
+    padding-top: 10px;
+
+
+}
+
+#user
+{
+    width: 200px;
+}
+
+#login
+{
+    margin-right: 8px;
+}
+
+#theme
+{
+    margin-right: 8px;
+}
+
+.signupWindow
+{
+    display: block;
+    width: 500px;
+    height: 562px;
+    background-color: #333;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+    align-content: center;
+    padding: 8px;
+    top: 0px;
+}
+
+.loginWindow
+{
+    display: block;
+    width: 500px;
+    height: 330px;
+    background-color: #333;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+    align-content: center;
+    padding: 8px;
+    top: 0px;
+}
+
+.mainlogo
+{
+    visibility: hidden;
+}
+
+.heading
+{
+    color: white;
+    font-family: arial;
+    width: 100%;
+    height: 29px;
+    background-color: #9e0707;
+    display: block;
+    padding-top: 12px;
+}
+
+.heading2
+{
+    color: white;
+    font-family: arial;
+    display: block;
+    background-color: #333;
+    font-size: 12px;
+    height: 22px;
+    padding-top: 8px;
+}
+
+
+
+.enterbox
+{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #111;
+    padding-top: 8px;
+}
+
+.submit
+{
+    width: 100px;
+    height: 40px;
+    margin: 16px;
+    background-color: #9e0707;
+    color: white;
+    font-family: arial;
+    border-width: 0px;
+}
+
+.submit:hover
+{
+    background-color: #111;
+    cursor: pointer;
+}
+
+.signupinput
+{
+    border: none;
+    height: 20px;
+    width: 80%;
+    margin-top: 24px;
+}
